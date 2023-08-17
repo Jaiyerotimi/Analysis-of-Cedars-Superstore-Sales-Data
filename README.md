@@ -45,7 +45,7 @@ The first task solution is to determine which product in the **Sub-Category**, g
 ## SOLUTION 2
 The second task solution is to find out which states are not profitable among all the states Cedars Superstore operated in the year in question. Using the pivot table and cleaned data, I clicked a cell on the data and then proceeded to the ‘Insert’ section of the ribbon, I clicked on the ‘Pivot Table’, which popped up on the data, with the entire Table/Range automatically selected, I checked the “Existing Worksheet’’, which indicates where I want my PivotTable report to be placed. The Pivot Table Fields box appeared on the right side, featuring all columns of the dataset. I dragged the **State** into the ROW fields and **Profit** into the VALUES fields.  Automatically, the sum of profit across states was displayed, as the default setting. I used the ‘Value filter’ to filter out the top 10 states where less profit was generated. **See the visual beside for a clearer illustration**.
 
-![](least_profitable_state.png)
+![](least_profitable _state.png)
 
 ## SOLUTION 3
 To get the total sales across the four regions of operation of the Superstore, I inserted the pivot table from the ‘Insert’ section of the ribbon. The entire Table/Range is automatically selected, I checked the “Existing Worksheet’’, which indicates where I want my PivotTable report to be placed. I dragged the **Sales** and **Region** into the ROW and VALUES fields respectively. I used the ‘More Sorting Option’ to sort in descending order to arrive at the business answer to the question. **See the visual beside for a clearer illustration**.
