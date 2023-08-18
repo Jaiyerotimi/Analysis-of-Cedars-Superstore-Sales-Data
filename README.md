@@ -4,11 +4,13 @@
 At the close of the Excel session of the 3rd Data Analytic Cohort, we were asked to work on a project. The project focused on analyzing Cedars’ Superstore Sales Data in the year in view, in order to get valuable patterns and insights into the business performance and make data-driven decisions to improve the business in the New Year. The instructor tasked us to come up with business questions and proffer solutions to improve performance in the new business year. The sales data contains 9995 rows and 21 columns. Columns name as follows; **Row ID, Order ID, Order Date, Ship Date, Ship Mode, Customer ID, Customer Name, Segment, Country, City, State, Postal Code, Region, Product ID, Category, Sub-Category, Product Name, Sales, Quantity, Discount, and Profit**.
 
 ## BUSINESS QUESTIONS
-Focusing on Key Performance Index such as:
--	Total Sales Value
--	Total Profit Value
--	Quantity Sold
--	Total Revenue Value
+Developing Key Performance Index would be a focal guide for this analysis. The following KPIs were created with adjoining formulas:
+-	Total Number of Sales Value   =COUNT(R2:R9995)
+-	Total Profit Value            =SUM(R2:R9995)
+-	Quantity Sold                 =SUM(S2:S9995)
+-	Total Revenue Value           =SUM(U2:U9995)
+
+![](kpi_text_box.png)
 
 I came up with the following business questions that required only data to provide empirical and relevant answers.
 1.	Which product’s **Sub-Category** generated the most revenue?
@@ -18,13 +20,11 @@ I came up with the following business questions that required only data to provi
 5.	What is the total **Sales** and **Profit** across the product’s **Category**?
 6.	What is the total **Sales** of products across the **Segment**?
 
-
 ## SKILLS DEMONSTRATED
 Data Processing
 Data Manipulation
 Use of Pivot Table
 Use of Pivot Chart for Visualization
-
 
 ## TASK SOLUTIONS
 
@@ -45,7 +45,7 @@ The first task solution is to determine which product in the **Sub-Category**, g
 ## SOLUTION 2
 The second task solution is to find out which states are not profitable among all the states Cedars Superstore operated in the year in question. Using the pivot table and cleaned data, I clicked a cell on the data and then proceeded to the ‘Insert’ section of the ribbon, I clicked on the ‘Pivot Table’, which popped up on the data, with the entire Table/Range automatically selected, I checked the “Existing Worksheet’’, which indicates where I want my PivotTable report to be placed. The Pivot Table Fields box appeared on the right side, featuring all columns of the dataset. I dragged the **State** into the ROW fields and **Profit** into the VALUES fields.  Automatically, the sum of profit across states was displayed, as the default setting. I used the ‘Value filter’ to filter out the top 10 states where less profit was generated. **See the visual beside for a clearer illustration**.
 
-![](least_profitable _state.png)
+![](least_profitable_state.png)
 
 ## SOLUTION 3
 To get the total sales across the four regions of operation of the Superstore, I inserted the pivot table from the ‘Insert’ section of the ribbon. The entire Table/Range is automatically selected, I checked the “Existing Worksheet’’, which indicates where I want my PivotTable report to be placed. I dragged the **Sales** and **Region** into the ROW and VALUES fields respectively. I used the ‘More Sorting Option’ to sort in descending order to arrive at the business answer to the question. **See the visual beside for a clearer illustration**.
@@ -67,4 +67,9 @@ The last task solution is to find out the total Sales across the three products 
 
 ![](sales_of_prod_across_.png)
 
+To easily filter through both the pivot table and the pivot chart and also to have a smooth-running visualization of the **Category, Sub-Category, and Segment** I engaged the slicers to achieve these. By clicking on a cell in the processed data, I moved to the ‘Insert’ section on the ribbon, I clicked on the ‘Insert Slicer’ a drop-box appeared with all column headers listed, I checked the Category, Sub-Category, and Segment, thus, produced the 3 selected slicers.
 
+![](slicers_data.png)
+
+CONCLUSION
+This project is an exposure to real-time spreadsheet analysis, from cleaning data to formatting, using pivot tables and charts with their inherent functionalities. I also learn how to create and use slicers for easy analysis, and likewise, developing KPIs through analysis.
